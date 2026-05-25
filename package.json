@@ -1,8 +1,8 @@
 {
-  "name": "raag-korla",
-  "displayName": "Raag Korla",
+  "name": "raag-korlii",
+  "displayName": "Raag Korlii",
   "description": "Plays an error sound on errors",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "al-sami",
   "icon": "media/icon.png",
   "repository": {
@@ -31,23 +31,23 @@
   "contributes": {
     "commands": [
       {
-        "command": "raag-korla.helloWorld",
+        "command": "raag-korlii.helloWorld",
         "title": "Hello World"
       },
       {
-        "command": "raag-korla.testSound",
-        "title": "Raag Korla: Test Error Sound"
+        "command": "raag-korlii.testSound",
+        "title": "Raag Korlii: Test Error Sound"
       }
     ],
     "configuration": {
-      "title": "Raag Korla",
+      "title": "Raag Korlii",
       "properties": {
-        "raagKorla.enabled": {
+        "raagKorlii.enabled": {
           "type": "boolean",
           "default": true,
           "description": "Enable or disable the error sound."
         },
-        "raagKorla.soundPath": {
+        "raagKorlii.soundPath": {
           "type": "string",
           "default": "",
           "description": "Optional custom path to an audio file (.wav or .mp3). If empty, the default error sound is used."

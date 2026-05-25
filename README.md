@@ -20,7 +20,9 @@
 <hr style="border: 1px solid #333; margin: 40px 0;" />
 
 <p style="line-height: 1.6; font-size: 1.1em;">
-  <strong>Raag Korla</strong> is a lightweight, productivity-boosting VS Code extension that plays an instant audio alert whenever a syntax error or warning is detected in your code. Stop constantly checking the "Problems" panel and let your ears catch the mistakes as they happen in real-time.
+  # Raag Korlii
+
+This is the **Raag Korlii** extension for Visual Studio Code. It plays an error sound (`raag_korlii.mp3` by default) whenever an error diagnostic appears in the editor.
 </p>
 
 <h2 style="margin-top: 40px;">✨ Features</h2>

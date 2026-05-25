@@ -6,14 +6,14 @@ import playSound = require('play-sound');
 const player = playSound({});
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log('Congratulations, your extension "raag-korla" is now active!');
+	console.log('Congratulations, your extension "raag-korlii" is now active!');
 
 	const errorCounts = new Map<string, number>();
 	let lastPlayTime = 0;
 	const COOLDOWN_MS = 1000; // Only play sound at most once per second
 
 	const diagnosticDisposable = vscode.languages.onDidChangeDiagnostics(e => {
-		const config = vscode.workspace.getConfiguration('raagKorla');
+		const config = vscode.workspace.getConfiguration('raagKorlii');
 		const isEnabled = config.get<boolean>('enabled', true);
 		if (!isEnabled) {
 			return;
@@ -42,10 +42,10 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 	});
 
-	const testCommandDisposable = vscode.commands.registerCommand('raag-korla.testSound', () => {
-		const config = vscode.workspace.getConfiguration('raagKorla');
+	const testCommandDisposable = vscode.commands.registerCommand('raag-korlii.testSound', () => {
+		const config = vscode.workspace.getConfiguration('raagKorlii');
 		playSoundEffect(context, config);
-		vscode.window.showInformationMessage('Raag Korla: Playing test sound!');
+		vscode.window.showInformationMessage('Raag Korlii: Playing test sound!');
 	});
 
 	context.subscriptions.push(diagnosticDisposable, testCommandDisposable);
@@ -58,14 +58,14 @@ function playSoundEffect(context: vscode.ExtensionContext, config: vscode.Worksp
 	if (!soundToPlay || soundToPlay.trim() === '') {
 		soundToPlay = context.asAbsolutePath(path.join('media', 'raag_korlii.mp3'));
 	} else if (!fs.existsSync(soundToPlay)) {
-		vscode.window.showErrorMessage(`Raag Korla: Custom sound file not found at "${soundToPlay}". Falling back to default sound.`);
+		vscode.window.showErrorMessage(`Raag Korlii: Custom sound file not found at "${soundToPlay}". Falling back to default sound.`);
 		soundToPlay = context.asAbsolutePath(path.join('media', 'raag_korlii.mp3'));
 	}
 
 	player.play(soundToPlay, (err: any) => {
 		if (err) {
-			console.error('Raag Korla: Error playing sound', err);
-			vscode.window.showErrorMessage('Raag Korla: Failed to play sound. Please check your audio settings or sound file format.');
+			console.error('Raag Korlii: Error playing sound', err);
+			vscode.window.showErrorMessage('Raag Korlii: Failed to play sound. Please check your audio settings or sound file format.');
 		}
 	});
 }
