@@ -2,7 +2,7 @@
   "name": "raag-korlii",
   "displayName": "Raag Korlii",
   "description": "Plays an error sound on errors",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "al-sami",
   "author": "Al Sami",
   "icon": "media/icon.png",
@@ -14,6 +14,7 @@
     "url": "https://github.com/al-sami-2005/Raag_Korlii-VS-code-Extention-/issues"
   },
   "homepage": "https://github.com/al-sami-2005/Raag_Korlii-VS-code-Extention-#readme",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.107.0"
   },
