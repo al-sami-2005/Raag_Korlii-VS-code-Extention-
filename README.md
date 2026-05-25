@@ -1,15 +1,15 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/al-sami-2005/Raag_Korlii-VS-code-Extention-/main/media/icon.png" width="160" alt="Raag Korla VS Code Extension Logo" style="border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 20px;" />
   
-  <h1 style="border-bottom: none; margin-bottom: 10px;">🎵 Raag Korla</h1>
+  <h1 style="border-bottom: none; margin-bottom: 10px;">🎵 Raag Korlii</h1>
   <p style="font-size: 1.2em; color: #888;"><strong>Instant Audio Alerts for Code Errors in Visual Studio Code</strong></p>
 
   <div style="margin-top: 15px; margin-bottom: 30px;">
     <a href="https://marketplace.visualstudio.com/items?itemName=al-sami.raag-korlii">
-      <img src="https://img.shields.io/visual-studio-marketplace/v/lazyehll.raag-korla?color=007ACC&label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="VS Code Marketplace Version" />
+      <img src="https://img.shields.io/visual-studio-marketplace/v/al-sami.raag-korlii?color=007ACC&label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="VS Code Marketplace Version" />
     </a>
     <a href="https://marketplace.visualstudio.com/items?itemName=al-sami.raag-korlii">
-      <img src="https://img.shields.io/visual-studio-marketplace/d/lazyehll.raag-korla?color=4CAF50&logo=visual-studio-code" alt="VS Code Marketplace Downloads" />
+      <img src="https://img.shields.io/visual-studio-marketplace/d/al-sami.raag-korlii?color=4CAF50&logo=visual-studio-code" alt="VS Code Marketplace Downloads" />
     </a>
     <a href="https://github.com/al-sami-2005/Raag_Korlii-VS-code-Extention-">
       <img src="https://img.shields.io/github/stars/al-sami-2005/Raag_Korlii-VS-code-Extention-?style=social" alt="GitHub Repo Stars" />
@@ -38,13 +38,13 @@ This is the **Raag Korlii** extension for Visual Studio Code. It plays an error 
 <ol style="line-height: 1.8;">
   <li>Open Visual Studio Code.</li>
   <li>Go to the <strong>Extensions</strong> view (<code>Ctrl+Shift+X</code> on Windows/Linux, <code>Cmd+Shift+X</code> on macOS).</li>
-  <li>Search for <strong>Raag Korla</strong> (Publisher: <em>Al Sami</em>).</li>
+  <li>Search for <strong>Raag Korlii</strong> (Publisher: <em>Al Sami</em>).</li>
   <li>Click <strong>Install</strong>.</li>
   <li>Reload VS Code if prompted.</li>
 </ol>
 
 <h2 style="margin-top: 40px;">⚙️ Extension Settings</h2>
-<p>Customize your audio experience easily. Navigate to <code>Settings > Extensions > Raag Korla</code>.</p>
+<p>Customize your audio experience easily. Navigate to <code>Settings > Extensions > Raag Korlii</code>.</p>
 
 <table style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 15px;">
   <thead>
@@ -56,12 +56,12 @@ This is the **Raag Korlii** extension for Visual Studio Code. It plays an error 
   </thead>
   <tbody>
     <tr style="border-bottom: 1px solid #333;">
-      <td style="padding: 12px;"><code>raagKorla.enabled</code></td>
+      <td style="padding: 12px;"><code>raagKorlii.enabled</code></td>
       <td style="padding: 12px;">Enable or disable the audio alerts globally.</td>
       <td style="padding: 12px;"><code>true</code></td>
     </tr>
     <tr>
-      <td style="padding: 12px;"><code>raagKorla.soundPath</code></td>
+      <td style="padding: 12px;"><code>raagKorlii.soundPath</code></td>
       <td style="padding: 12px;">The absolute file path to a custom <code>.mp3</code> or <code>.wav</code> file you want to use for the error sound.</td>
       <td style="padding: 12px;"><em>(Blank - uses default audio)</em></td>
     </tr>
@@ -71,7 +71,7 @@ This is the **Raag Korlii** extension for Visual Studio Code. It plays an error 
 <h2 style="margin-top: 40px;">⌨️ Commands</h2>
 <p>Trigger these commands via the VS Code Command Palette (<code>Ctrl+Shift+P</code> or <code>Cmd+Shift+P</code>):</p>
 <ul style="line-height: 1.8;">
-  <li><strong><code>Raag Korla: Test Error Sound</code></strong> - Plays the currently configured sound so you can verify your volume and ensure your custom audio path is working perfectly.</li>
+  <li><strong><code>Raag Korlii: Test Error Sound</code></strong> - Plays the currently configured sound so you can verify your volume and ensure your custom audio path is working perfectly.</li>
 </ul>
 
 <hr style="border: 1px solid #333; margin: 50px 0 30px 0;" />
