@@ -1,61 +1,79 @@
 <div align="center">
-  <img src="media/icon.png" width="150" alt="Raag Korla Logo" />
-  <h1>Raag Korla</h1>
-  <p><strong>Instant Audio Alerts for Code Errors</strong></p>
+  <img src="https://raw.githubusercontent.com/al-sami-2005/Raag_Korlii-VS-code-Extention-/main/media/icon.png" width="160" alt="Raag Korla VS Code Extension Logo" style="border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 20px;" />
+  
+  <h1 style="border-bottom: none; margin-bottom: 10px;">🎵 Raag Korla</h1>
+  <p style="font-size: 1.2em; color: #888;"><strong>Instant Audio Alerts for Code Errors in Visual Studio Code</strong></p>
+
+  <div style="margin-top: 15px; margin-bottom: 30px;">
+    <a href="https://marketplace.visualstudio.com/items?itemName=lazyehll.raag-korla">
+      <img src="https://img.shields.io/visual-studio-marketplace/v/lazyehll.raag-korla?color=007ACC&label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="VS Code Marketplace Version" />
+    </a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=lazyehll.raag-korla">
+      <img src="https://img.shields.io/visual-studio-marketplace/d/lazyehll.raag-korla?color=4CAF50&logo=visual-studio-code" alt="VS Code Marketplace Downloads" />
+    </a>
+    <a href="https://github.com/al-sami-2005/Raag_Korlii-VS-code-Extention-">
+      <img src="https://img.shields.io/github/stars/al-sami-2005/Raag_Korlii-VS-code-Extention-?style=social" alt="GitHub Repo Stars" />
+    </a>
+  </div>
 </div>
 
----
+<hr style="border: 1px solid #333; margin: 40px 0;" />
 
-**Raag Korla** is a powerful productivity extension for Visual Studio Code that provides an instant, customizable sound alert whenever a syntax error or warning is detected in your code. Catch mistakes as they happen without having to manually check the "Problems" panel!
+<p style="line-height: 1.6; font-size: 1.1em;">
+  <strong>Raag Korla</strong> is a lightweight, productivity-boosting VS Code extension that plays an instant audio alert whenever a syntax error or warning is detected in your code. Stop constantly checking the "Problems" panel and let your ears catch the mistakes as they happen in real-time.
+</p>
 
-## Features
+<h2 style="margin-top: 40px;">✨ Features</h2>
+<ul style="line-height: 1.8;">
+  <li><strong>🌍 Universal Language Support:</strong> Works seamlessly across <em>any</em> programming language (TypeScript, Python, C++, Java, etc.) as long as there is an active linter or language server providing diagnostics.</li>
+  <li><strong>⚡ Zero Configuration Needed:</strong> Works right out of the box with a default, non-intrusive alert sound.</li>
+  <li><strong>🎛️ Fully Customizable Audio:</strong> Easily plug in your own custom <code>.mp3</code> or <code>.wav</code> files via the extension settings.</li>
+  <li><strong>🛡️ Smart Debouncing:</strong> Built-in 1-second cooldown logic prevents audio spam during massive refactoring, pasting large code blocks, or full-project analysis.</li>
+</ul>
 
-- **Universal Support**: Works seamlessly across *any* programming language (TypeScript, Python, C++, Java, etc.) — as long as there is a linter or language server providing diagnostics!
-- **Zero Config Required**: Works out of the box with a default alert beep.
-- **Customizable Audio**: Easily plug in your own custom sound files (`.mp3` or `.wav`) via the extension settings.
-- **Smart Debouncing**: Prevents audio spam during massive refactoring or full-project analysis.
+<h2 style="margin-top: 40px;">🚀 Installation</h2>
+<p>You can install this extension directly from the Visual Studio Code Marketplace.</p>
+<ol style="line-height: 1.8;">
+  <li>Open Visual Studio Code.</li>
+  <li>Go to the <strong>Extensions</strong> view (<code>Ctrl+Shift+X</code> on Windows/Linux, <code>Cmd+Shift+X</code> on macOS).</li>
+  <li>Search for <strong>Raag Korla</strong> (Publisher: <em>lazyehll</em>).</li>
+  <li>Click <strong>Install</strong>.</li>
+  <li>Reload VS Code if prompted.</li>
+</ol>
 
-## Extension Settings
+<h2 style="margin-top: 40px;">⚙️ Extension Settings</h2>
+<p>Customize your audio experience easily. Navigate to <code>Settings > Extensions > Raag Korla</code>.</p>
 
-This extension contributes the following settings:
+<table style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 15px;">
+  <thead>
+    <tr style="background-color: #222; border-bottom: 2px solid #444;">
+      <th style="padding: 12px;">Setting</th>
+      <th style="padding: 12px;">Description</th>
+      <th style="padding: 12px;">Default Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #333;">
+      <td style="padding: 12px;"><code>raagKorla.enabled</code></td>
+      <td style="padding: 12px;">Enable or disable the audio alerts globally.</td>
+      <td style="padding: 12px;"><code>true</code></td>
+    </tr>
+    <tr>
+      <td style="padding: 12px;"><code>raagKorla.soundPath</code></td>
+      <td style="padding: 12px;">The absolute file path to a custom <code>.mp3</code> or <code>.wav</code> file you want to use for the error sound.</td>
+      <td style="padding: 12px;"><em>(Blank - uses default audio)</em></td>
+    </tr>
+  </tbody>
+</table>
 
-* `raagKorla.enabled`: Enable/disable this extension (Default: `true`).
-* `raagKorla.soundPath`: The absolute path to a custom `.mp3` or `.wav` file you want to use for the error sound. If left blank, the default alert sound is used.
+<h2 style="margin-top: 40px;">⌨️ Commands</h2>
+<p>Trigger these commands via the VS Code Command Palette (<code>Ctrl+Shift+P</code> or <code>Cmd+Shift+P</code>):</p>
+<ul style="line-height: 1.8;">
+  <li><strong><code>Raag Korla: Test Error Sound</code></strong> - Plays the currently configured sound so you can verify your volume and ensure your custom audio path is working perfectly.</li>
+</ul>
 
-## Commands
+<hr style="border: 1px solid #333; margin: 50px 0 30px 0;" />
 
-* **`Raag Korla: Test Error Sound`**: Trigger this command via the Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`) to verify your volume and test your custom sound file.
-
-## Requirements
-
-No extra requirements or dependencies needed. Just install and code!
-
-## Custom Sounds
-
-*You can provide your own custom sound by opening your VS Code settings, searching for "Raag Korla", and pasting the absolute path to your audio file.*
-
----
-**Enjoy error-free coding!**
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+<div align="center" style="color: #888; font-style: italic; font-size: 0.9em;">
+  <p>Built with copious amounts of caffeine, sheer spite for missing semicolons, and pure, unadulterated vibe coding. 😤</p>
+</div>
