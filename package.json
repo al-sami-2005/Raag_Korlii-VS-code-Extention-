@@ -1,0 +1,80 @@
+{
+  "name": "raag-korla",
+  "displayName": "Raag Korla",
+  "description": "Plays an error sound on errors",
+  "version": "0.0.2",
+  "publisher": "lazyehll",
+  "icon": "media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lazyehll/raag-korla"
+  },
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Other",
+    "Linters",
+    "Education"
+  ],
+  "keywords": [
+    "error",
+    "sound",
+    "alert",
+    "beep",
+    "productivity"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "raag-korla.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "raag-korla.testSound",
+        "title": "Raag Korla: Test Error Sound"
+      }
+    ],
+    "configuration": {
+      "title": "Raag Korla",
+      "properties": {
+        "raagKorla.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable the error sound."
+        },
+        "raagKorla.soundPath": {
+          "type": "string",
+          "default": "",
+          "description": "Optional custom path to an audio file (.wav or .mp3). If empty, the default error sound is used."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/play-sound": "^1.1.2",
+    "@types/vscode": "^1.107.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
+  },
+  "dependencies": {
+    "play-sound": "^1.1.6"
+  }
+}
