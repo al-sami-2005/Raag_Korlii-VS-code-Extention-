@@ -38,7 +38,7 @@ This is the **Raag Korlii** extension for Visual Studio Code. It plays an error 
 <ol style="line-height: 1.8;">
   <li>Open Visual Studio Code.</li>
   <li>Go to the <strong>Extensions</strong> view (<code>Ctrl+Shift+X</code> on Windows/Linux, <code>Cmd+Shift+X</code> on macOS).</li>
-  <li>Search for <strong>Raag Korla</strong> (Publisher: <em>lazyehll</em>).</li>
+  <li>Search for <strong>Raag Korla</strong> (Publisher: <em>Al Sami</em>).</li>
   <li>Click <strong>Install</strong>.</li>
   <li>Reload VS Code if prompted.</li>
 </ol>
