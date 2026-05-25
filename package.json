@@ -2,13 +2,18 @@
   "name": "raag-korlii",
   "displayName": "Raag Korlii",
   "description": "Plays an error sound on errors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "al-sami",
+  "author": "Al Sami",
   "icon": "media/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/al-sami-2005/Raag_Korlii-VS-code-Extention-"
   },
+  "bugs": {
+    "url": "https://github.com/al-sami-2005/Raag_Korlii-VS-code-Extention-/issues"
+  },
+  "homepage": "https://github.com/al-sami-2005/Raag_Korlii-VS-code-Extention-#readme",
   "engines": {
     "vscode": "^1.107.0"
   },
