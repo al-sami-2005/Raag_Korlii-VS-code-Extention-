@@ -5,10 +5,10 @@
   <p style="font-size: 1.2em; color: #888;"><strong>Instant Audio Alerts for Code Errors in Visual Studio Code</strong></p>
 
   <div style="margin-top: 15px; margin-bottom: 30px;">
-    <a href="https://marketplace.visualstudio.com/items?itemName=lazyehll.raag-korla">
+    <a href="https://marketplace.visualstudio.com/items?itemName=al-sami.raag-korlii">
       <img src="https://img.shields.io/visual-studio-marketplace/v/lazyehll.raag-korla?color=007ACC&label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="VS Code Marketplace Version" />
     </a>
-    <a href="https://marketplace.visualstudio.com/items?itemName=lazyehll.raag-korla">
+    <a href="https://marketplace.visualstudio.com/items?itemName=al-sami.raag-korlii">
       <img src="https://img.shields.io/visual-studio-marketplace/d/lazyehll.raag-korla?color=4CAF50&logo=visual-studio-code" alt="VS Code Marketplace Downloads" />
     </a>
     <a href="https://github.com/al-sami-2005/Raag_Korlii-VS-code-Extention-">
